@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 265 60% 8%;
+    --foreground: 280 20% 96%;
+
+    --card: 265 50% 12%;
+    --card-foreground: 280 20% 96%;
+
+    --popover: 265 50% 12%;
+    --popover-foreground: 280 20% 96%;
+
+    --primary: 28 100% 60%;
+    --primary-foreground: 265 60% 8%;
+
+    --secondary: 320 80% 65%;
+    --secondary-foreground: 265 60% 8%;
+
+    --muted: 265 40% 20%;
+    --muted-foreground: 280 15% 70%;
+
+    --accent: 190 90% 55%;
+    --accent-foreground: 265 60% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 280 20% 96%;
+
+    --border: 265 40% 25%;
+    --input: 265 40% 25%;
+    --ring: 28 100% 60%;
+
+    --radius: 1rem;
+
+    --gradient-space: linear-gradient(135deg, hsl(265 60% 12%), hsl(280 70% 20%));
+    --gradient-solar: linear-gradient(135deg, hsl(28 100% 60%), hsl(40 100% 70%));
+    --gradient-cosmic: linear-gradient(135deg, hsl(320 80% 65%), hsl(190 90% 55%));
+    
+    --shadow-glow: 0 0 40px hsl(28 100% 60% / 0.3);
+    --shadow-cosmic: 0 10px 50px hsl(320 80% 65% / 0.2);
+  }
+
+  .dark {
+    --background: 265 60% 8%;
+    --foreground: 280 20% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(135deg, hsl(265 60% 8%), hsl(280 70% 15%));
+    min-height: 100vh;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
