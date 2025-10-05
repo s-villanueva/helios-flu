@@ -8,7 +8,7 @@ const CreatorsSection = () => {
           <div className="inline-flex items-center gap-3 mb-6">
             <Star className="w-10 h-10 text-accent animate-glow" />
             <h2 className="text-5xl font-bold bg-gradient-cosmic bg-clip-text text-transparent">
-              Creadores del Juego
+              Game Creators
             </h2>
             <Star className="w-10 h-10 text-secondary animate-glow" />
           </div>

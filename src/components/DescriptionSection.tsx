@@ -76,9 +76,8 @@ const DescriptionSection = () => {
         <div className="bg-gradient-space p-8 rounded-3xl border border-primary/30 shadow-cosmic">
           <h3 className="text-3xl font-bold mb-4 text-center">An Space Adventure</h3>
           <p className="text-center text-lg text-muted-foreground max-w-2xl mx-auto">
-            Dive into a journey through space where you’ll discover the secrets of the Sun, learn about solar eruptions, 
-            and understand how we protect our planet from these natural phenomena. 
-            An educational experience you’ll never forget!
+            A short game with a linear story that showcases the effects of space weather over the planet Earth and how we perceive it. 
+            The player gets to interact with the world while getting info drops on the behavior of solar storms their interaction with Earth's atmosphere. This would promote the awareness of these type of events, with the potential to cause major disruptions in the modern society that relies so much on electrical devices.
           </p>
         </div>
       </div>

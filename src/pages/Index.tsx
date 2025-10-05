@@ -58,7 +58,7 @@ const Index = () => {
           <p className="text-muted-foreground">
             © 2025 Helios Flu. An educational space adventure. ✨
           </p>
-          <a href="https://github.com/TU_USUARIO/TU_REPOSITORIO" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/s-villanueva/helios-flu" target="_blank" rel="noopener noreferrer">
               <span>GitHub</span>
           </a>
         </div>
